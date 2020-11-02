@@ -72,7 +72,9 @@ class AuthController extends Controller
      */
     public function refresh()
     {
-        return $this->respondWithToken(Auth::refresh());
+        // Pass true as the first param to force the token to be blacklisted "forever".
+        // The second parameter will reset the claims for the new token
+        return $this->respondWithToken(Auth::refresh(true, true));
     }
 
     /**
