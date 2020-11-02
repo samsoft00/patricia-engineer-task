@@ -68,6 +68,15 @@ class AuthController extends Controller
     }
 
     /**
+     * Token generation for subsequent actions
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function refresh()
+    {
+        return $this->respondWithToken(Auth::refresh());
+    }
+
+    /**
      * Get the token array structure.
      * @param  string $token
      * @return \Illuminate\Http\JsonResponse

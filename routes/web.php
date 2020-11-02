@@ -27,4 +27,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     // /api/users
     $router->get('users', 'UserController@getAllUsers');
+
+    // api/refresh-token
+    $router->get('refresh-token', 'AuthController@refresh');
 });
