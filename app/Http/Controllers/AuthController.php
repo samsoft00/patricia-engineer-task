@@ -42,7 +42,6 @@ class AuthController extends Controller
                 200
             );
         } catch (\Exception $th) {
-            //throw $th;
             return response()->json(['message' => 'Registration failed!'], 401);
         }
     }
