@@ -6,6 +6,26 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class AuthTest extends TestCase
 {
     /**
+     * Test user registration
+     * @return void
+     */
+    public function testUserRegistration()
+    {
+
+        $this->post(
+            "/api/register",
+            [
+                "name" => "John Doe",
+                "email" => "john1@doe.com",
+                "password" => "password",
+                "password_confirmation" => "password"
+            ],
+        );
+
+        $this->assertEquals(200, $this->response->status());
+    }
+
+    /**
      * Test incorrect password.
      * @return void
      */
