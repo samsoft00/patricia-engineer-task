@@ -20,6 +20,7 @@ Implement an Authentication service, with
 -   `git clone https://github.com/samsoft00/patricia-engineer-task.git patricia-auth-api`
 -   `cd patricia-auth-api`
 -   `composer install`
+-   `cp .env.example .env`
 -   `php artisan jwt:secret`
 -   `php artisan migrate`
 -   `php -S localhost:8000 -t public`
