@@ -17,8 +17,8 @@ Implement an Authentication service, with
 
 ### Usage
 
--   `git clone https://github.com/samsoft00/patricia-engineer-task.git auth-api`
--   `cd auth-api`
+-   `git clone https://github.com/samsoft00/patricia-engineer-task.git patricia-auth-api`
+-   `cd patricia-auth-api`
 -   `composer install`
 -   `php artisan jwt:secret`
 -   `php artisan migrate`
