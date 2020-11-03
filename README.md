@@ -14,3 +14,16 @@ Implement an Authentication service, with
 3. Unit test coverage (>70%)
 4. API Documentation
 5. Use of best practice
+
+### Usage
+
+-   `git clone https://github.com/samsoft00/patricia-engineer-task.git auth-api`
+-   `cd auth-api`
+-   `composer install`
+-   `php artisan jwt:secret`
+-   `php artisan migrate`
+-   `php -S localhost:8000 -t public`
+
+#### Postman Link
+
+-   `https://www.getpostman.com/collections/6df1de58ea594dca5511`
