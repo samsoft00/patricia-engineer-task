@@ -24,6 +24,10 @@ Implement an Authentication service, with
 -   `php artisan migrate`
 -   `php -S localhost:8000 -t public`
 
-#### Postman Link
+### Postman Link
 
 -   `https://www.getpostman.com/collections/6df1de58ea594dca5511`
+
+### Run Test
+
+-   `vendor/bin/phpunit`

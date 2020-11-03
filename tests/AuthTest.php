@@ -11,12 +11,14 @@ class AuthTest extends TestCase
      */
     public function testUserRegistration()
     {
-
+        $index = rand(50, 100);
+        $email = "john" . $index . "@doe.com";
+        var_dump($email);
         $this->post(
             "/api/register",
             [
                 "name" => "John Doe",
-                "email" => "john1@doe.com",
+                "email" => $email,
                 "password" => "password",
                 "password_confirmation" => "password"
             ],
